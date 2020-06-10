@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="sample.Controller"
+                xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+    <Button text="Save in file" onAction="#saveInFile"/>
+    <Button text="Read from file" layoutX="100" onAction="#readFromFile"/>
+    <Button text="Add" layoutX="200" onAction="#addRecord"/>
+    <Button text="Edit" layoutX="250" onAction="#editRecord"/>
+    <Button text="Delete" layoutX="300" onAction="#deleteRecord"/>
+    <TableView layoutY="30" fx:id="tableRec" prefHeight="400" prefWidth="400">
+        <columns>
+            <TableColumn prefWidth="200" fx:id="tableTank" text="Tank"/>
+            <TableColumn prefWidth="200" fx:id="tableTankName" text="Name of Tank"/>
+        </columns>
+    </TableView>
+</AnchorPane>
