@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ComboBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.TankFormController"
+            prefHeight="200.0" prefWidth="220.0" fx:id="anchor">
+    <ComboBox fx:id="tankSelector" onAction="#tankSelect" />
+</AnchorPane>

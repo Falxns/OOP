@@ -1,0 +1,13 @@
+Tanks/Medium/Medium.class
+Tanks/Light/Light.class
+Tanks/Tanks.class
+sample/TableString.class
+sample/IServ.class
+Tanks/Artillery/Artillery.class
+module-info.class
+Tanks/TankDestroyer/TankDestroyer.class
+sample/Controller.class
+sample/Creator.class
+sample/TankFormController.class
+Tanks/Heavy/Heavy.class
+sample/Main.class
