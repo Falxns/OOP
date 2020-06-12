@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.6" class="java.beans.XMLDecoder">
+ <object class="Tanks.Light.Light" id="Light0">
+  <void class="Tanks.Tanks" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="Light0"/>
+    <string>БТ-7</string>
+   </void>
+  </void>
+  <void class="Tanks.Tanks" method="getField">
+   <string>weight</string>
+   <void method="set">
+    <object idref="Light0"/>
+    <int>5</int>
+   </void>
+  </void>
+  <void property="haveNitro">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="Tanks.Medium.Medium" id="Medium0">
+  <void class="Tanks.Tanks" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="Medium0"/>
+    <string>AMX CDC</string>
+   </void>
+  </void>
+  <void class="Tanks.Tanks" method="getField">
+   <string>weight</string>
+   <void method="set">
+    <object idref="Medium0"/>
+    <int>20</int>
+   </void>
+  </void>
+  <void property="haveAPDS">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="Tanks.Artillery.Artillery" id="Artillery0">
+  <void class="Tanks.Tanks" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="Artillery0"/>
+    <string>СУ-8</string>
+   </void>
+  </void>
+  <void class="Tanks.Tanks" method="getField">
+   <string>weight</string>
+   <void method="set">
+    <object idref="Artillery0"/>
+    <int>30</int>
+   </void>
+  </void>
+  <void property="arcOfFire">
+   <int>30</int>
+  </void>
+ </object>
+ <object class="Tanks.TankDestroyer.TankDestroyer" id="TankDestroyer0">
+  <void class="Tanks.Tanks" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="TankDestroyer0"/>
+    <string>СУ-152</string>
+   </void>
+  </void>
+  <void class="Tanks.Tanks" method="getField">
+   <string>weight</string>
+   <void method="set">
+    <object idref="TankDestroyer0"/>
+    <int>35</int>
+   </void>
+  </void>
+ </object>
+ <object class="Tanks.TankDestroyer.TankDestroyer" id="TankDestroyer1">
+  <void class="Tanks.Tanks" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="TankDestroyer1"/>
+    <string>Hellcat</string>
+   </void>
+  </void>
+  <void class="Tanks.Tanks" method="getField">
+   <string>weight</string>
+   <void method="set">
+    <object idref="TankDestroyer1"/>
+    <int>22</int>
+   </void>
+  </void>
+  <void property="roundTower">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="Tanks.Heavy.Heavy" id="Heavy0">
+  <void class="Tanks.Tanks" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="Heavy0"/>
+    <string>ИС-7</string>
+   </void>
+  </void>
+  <void class="Tanks.Tanks" method="getField">
+   <string>weight</string>
+   <void method="set">
+    <object idref="Heavy0"/>
+    <int>60</int>
+   </void>
+  </void>
+  <void property="haveArmorScreen">
+   <boolean>true</boolean>
+  </void>
+ </object>
+ <object class="Tanks.Heavy.Heavy" id="Heavy1">
+  <void class="Tanks.Tanks" method="getField">
+   <string>name</string>
+   <void method="set">
+    <object idref="Heavy1"/>
+    <string>MAUS</string>
+   </void>
+  </void>
+  <void class="Tanks.Tanks" method="getField">
+   <string>weight</string>
+   <void method="set">
+    <object idref="Heavy1"/>
+    <int>100</int>
+   </void>
+  </void>
+ </object>
+</java>

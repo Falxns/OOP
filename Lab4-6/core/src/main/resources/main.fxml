@@ -6,7 +6,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane fx:controller="sample.Controller"
-            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+            fx:id="anchor">
     <Button text="Save in file" onAction="#saveInFile"/>
     <Button text="Read from file" layoutX="100" onAction="#readFromFile"/>
     <Button text="Add" layoutX="200" onAction="#addRecord"/>
