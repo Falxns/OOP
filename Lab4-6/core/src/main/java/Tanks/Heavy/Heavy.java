@@ -41,6 +41,7 @@ public class Heavy extends Tanks {
             try {
                 Heavy tank = new Heavy(controller.nameField.getText(), Integer.parseInt(controller.weightField.getText()), armorScreen.isSelected());
                 Controller.tableTanksList.set(Controller.selectedIndex, new TableString(tank, tank.name));
+                observers.notifyObjectChanged(this);
             } catch (Exception ex) {
                 return;
             }
@@ -67,6 +68,7 @@ public class Heavy extends Tanks {
             try {
                 Heavy tank = new Heavy(controller.nameField.getText(), Integer.parseInt(controller.weightField.getText()), armorScreen.isSelected());
                 Controller.tableTanksList.add(new TableString(tank, tank.name));
+                observers.notifyObjectCreated(this);
             } catch (Exception ex) {
                 return;
             }

@@ -1,5 +1,6 @@
 package sample;
 
+import Observer.EmptyObserver;
 import Tanks.Tanks;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -57,6 +58,12 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         importTanks(args);
+        Tanks.observers.add(new EmptyObserver() {
+            @Override
+            public void objectCreated(Object object) { System.out.println("Tank created: " + object); }
+            @Override
+            public void objectChanged(Object object) { System.out.println("Tank changed: "+ object); }
+        });
         launch(args);
     }
 }

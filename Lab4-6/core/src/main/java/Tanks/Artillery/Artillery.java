@@ -45,6 +45,7 @@ public class Artillery extends Tanks {
             try {
                 Artillery tank = new Artillery(controller.nameField.getText(), Integer.parseInt(controller.weightField.getText()), Integer.parseInt(arcOfFire.getText()));
                 Controller.tableTanksList.add(new TableString(tank, tank.name));
+                observers.notifyObjectChanged(this);
             } catch (Exception ex) {
                 return;
             }
@@ -74,6 +75,7 @@ public class Artillery extends Tanks {
             try {
                 Artillery tank = new Artillery(controller.nameField.getText(), Integer.parseInt(controller.weightField.getText()), Integer.parseInt(arcOfFire.getText()));
                 Controller.tableTanksList.add(new TableString(tank, tank.name));
+                observers.notifyObjectCreated(this);
             } catch (Exception ex) {
                 return;
             }

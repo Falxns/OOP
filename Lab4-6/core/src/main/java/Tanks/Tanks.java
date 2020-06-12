@@ -1,5 +1,6 @@
 package Tanks;
 
+import Observer.Observers;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import sample.TankFormController;
@@ -7,6 +8,7 @@ import sample.TankFormController;
 public abstract class Tanks {
     public String name;
     public int weight;
+    public static Observers observers = new Observers();
     public Tanks(String name, int weight) {
         setName(name);
         setWeight(weight);

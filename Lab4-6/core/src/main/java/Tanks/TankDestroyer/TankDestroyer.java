@@ -40,6 +40,7 @@ public class TankDestroyer extends Tanks {
             try {
                 TankDestroyer tank = new TankDestroyer(controller.nameField.getText(), Integer.parseInt(controller.weightField.getText()), rounded.isSelected());
                 Controller.tableTanksList.set(Controller.selectedIndex, new TableString(tank, tank.name));
+                observers.notifyObjectChanged(this);
             } catch (Exception ex) {
                 return;
             }
@@ -66,6 +67,7 @@ public class TankDestroyer extends Tanks {
             try {
                 TankDestroyer tank = new TankDestroyer(controller.nameField.getText(), Integer.parseInt(controller.weightField.getText()), rounded.isSelected());
                 Controller.tableTanksList.add(new TableString(tank, tank.name));
+                observers.notifyObjectCreated(this);
             } catch (Exception ex) {
                 return;
             }

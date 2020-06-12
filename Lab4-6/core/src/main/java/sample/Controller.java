@@ -1,7 +1,9 @@
 package sample;
 
+import Adapter.AdapterForEncryption;
 import Decorator.Decorator;
 import Decorator.BasicDecorator;
+import Observer.Observers;
 import Serialization.Serialization;
 import Serialization.XMLSerialization;
 import Serialization.ZipSerialization;
@@ -19,6 +21,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+import java.awt.event.ActionEvent;
 import java.io.*;
 import java.util.LinkedList;
 
@@ -58,7 +62,14 @@ public class Controller {
         rbZIP.setOnAction((ActionEvent) -> {
             decorator = new ZipSerialization();
         });
-        anchor.getChildren().addAll(rbXML,rbZIP);
+        RadioButton rbEncryption = new RadioButton("Encrypted");
+        rbEncryption.setLayoutY(440);
+        rbEncryption.setLayoutX(115);
+        rbEncryption.setToggleGroup(toggleGroup);
+        rbEncryption.setOnAction((ActionEvent) -> {
+            decorator = new AdapterForEncryption();
+        });
+        anchor.getChildren().addAll(rbXML,rbZIP,rbEncryption);
     }
 
     public void saveInFile() throws Exception {

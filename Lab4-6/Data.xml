@@ -62,29 +62,13 @@
    <string>name</string>
    <void method="set">
     <object idref="TankDestroyer0"/>
-    <string>СУ-152</string>
-   </void>
-  </void>
-  <void class="Tanks.Tanks" method="getField">
-   <string>weight</string>
-   <void method="set">
-    <object idref="TankDestroyer0"/>
-    <int>35</int>
-   </void>
-  </void>
- </object>
- <object class="Tanks.TankDestroyer.TankDestroyer" id="TankDestroyer1">
-  <void class="Tanks.Tanks" method="getField">
-   <string>name</string>
-   <void method="set">
-    <object idref="TankDestroyer1"/>
     <string>Hellcat</string>
    </void>
   </void>
   <void class="Tanks.Tanks" method="getField">
    <string>weight</string>
    <void method="set">
-    <object idref="TankDestroyer1"/>
+    <object idref="TankDestroyer0"/>
     <int>22</int>
    </void>
   </void>
